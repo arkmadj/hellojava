@@ -4,7 +4,7 @@ import java.util.Date;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Date now = new Date();
-        System.out.println(now);
+        String message = "Hello world";
+        System.out.println(message);
     }
 }
