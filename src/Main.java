@@ -1,6 +1,9 @@
+import java.text.NumberFormat;
+
 public class Main {
     public static void main(String[] args) {
-        int result = (int)(Math.random() * 100);
+        NumberFormat currency =  NumberFormat.getCurrencyInstance();
+        String result = currency.format(123445345.23423);
         System.out.println(result);
     }
 }
