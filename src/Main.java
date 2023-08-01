@@ -2,7 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        int age = 30;
-        System.out.println(age);
+        byte age = 30;
+        long viewCount = 3_123_456_789L;
     }
 }
