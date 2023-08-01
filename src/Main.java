@@ -1,9 +1,11 @@
 import java.text.NumberFormat;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        NumberFormat currency =  NumberFormat.getCurrencyInstance();
-        String result = currency.format(123445345.23423);
-        System.out.println(result);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: ");
+        byte age = scanner.nextByte();
+        System.out.println("You are " + age);
     }
 }
