@@ -1,6 +1,20 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int income = 120_000;
-        String className = income > 100_000 ? "First" : "Economy";
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a Number: ");
+        int number = input.nextInt();
+        if(number % 5 == 0){
+            if(number % 3 == 0){
+                System.out.println("FizzBuzz");
+            }else{
+                System.out.println("Fizz");
+            }
+        }else if(number % 3 == 0){
+            System.out.println("Buzz");
+        }else{
+            System.out.println(number);
+        }
     }
 }
