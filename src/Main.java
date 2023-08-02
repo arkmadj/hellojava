@@ -22,7 +22,7 @@ public class Main {
         }
 
         while(true){
-            System.out.println("Annual Interest Rate: ");
+            System.out.print("Annual Interest Rate: ");
             float annualInterest = scanner.nextFloat();
             if(annualInterest >= 1 && annualInterest <= 30){
                 monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
@@ -32,8 +32,8 @@ public class Main {
         }
 
         while(true){
-            System.out.println("Period (Years): ");
-            byte years = scanner.nextByte();
+            System.out.print("Period (Years): ");
+            int years = scanner.nextInt();
             if(years >= 1 && years <= 30){
                 numberOfPayments = years * MONTHS_IN_YEAR;
                 break;
